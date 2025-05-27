@@ -76,11 +76,11 @@ export const projects: Project[] = [
   {
     id: 'portfolio-website',
     title: 'Portfolio Website',
-    description: 'A personal portfolio website showcasing my projects and skills.',
-    longDescription: 'My personal portfolio website designed to showcase my projects, skills, and professional experience. The site features a responsive design, dark/light mode, animated transitions, and contact form functionality. It was built with React and Tailwind CSS with a focus on performance, accessibility, and user experience.',
+    description: 'A personal portfolio built with React, TypeScript, Tailwind CSS, and Supabase. Features responsive design, animations, dark/light mode, and follows modern development best practices.',
+    longDescription: 'This is my personal portfolio website designed to highlight my skills, projects, and professional background. It features a clean and modern design with smooth animations, a fully responsive layout that works seamlessly across devices, and an intuitive user interface. The website includes sections like About, Projects, Skills, and Contact, offering a complete overview of who I am and what I do. It’s built to create a lasting impression, provide an engaging experience for visitors, and serve as a central place to connect with me professionally.',
     image: 'https://images.pexels.com/photos/4974914/pexels-photo-4974914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Vite','Supabase','Node.js','npm',],
-    liveUrl: 'https://kuldeepbishnoi.dev',
+    liveUrl: 'https://kuldeepbishnoi.netlify.app/',
     githubUrl: 'https://github.com/Kuldeepbishnoi2005/portfolio',
     category: 'web',
     featured: true
