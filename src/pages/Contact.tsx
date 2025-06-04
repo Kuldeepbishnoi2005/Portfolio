@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   const sendWhatsAppNotification = async (messageData: typeof formData) => {
-    const message = New Contact Form Submission:\nName: ${messageData.name}\nEmail: ${messageData.email}\nSubject: ${messageData.subject}\nMessage: ${messageData.message};
+    const message = New Contact Form Submission:\nName: ${messageData.name}\nEmail: ${messageData.email}\nSubject: ${messageData.subject}\nMessage: ${messageData.message}`;
     const whatsappUrl = https://wa.me/9350821597?text=${encodeURIComponent(message)};
     window.open(whatsappUrl, '_blank');
   };
