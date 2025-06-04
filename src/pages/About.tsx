@@ -74,7 +74,7 @@ const About = () => {
                 
                 <div className="mt-6">
                   <a 
-                    href="https://qaekqlqtkygzzfkcompg.supabase.co/storage/v1/object/sign/portfolio.img/FRONTEND%20DEVELPOR.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzllMzhjZDVhLTI2MTgtNDM0NS1hYzRmLTkwMzY4NGU2MGYwOCJ9.eyJ1cmwiOiJwb3J0Zm9saW8uaW1nL0ZST05URU5EIERFVkVMUE9SLnBkZiIsImlhdCI6MTc0ODM3NDY1MywiZXhwIjo2NjM5NzE3NDY1M30.VPIUYpy3od_3-TPJqI-SsdZAij5K14PnjYmoZZV9-fU" 
+                    href="https://qaekqlqtkygzzfkcompg.supabase.co/storage/v1/object/sign/portfolio.img/FRONTEND%20DEVELOPER.pdf?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85ZTM4Y2Q1YS0yNjE4LTQzNDUtYWM0Zi05MDM2ODRlNjBmMDgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8uaW1nL0ZST05URU5EIERFVkVMT1BFUi5wZGYiLCJpYXQiOjE3NDkwMTQ1ODcsImV4cCI6NjYzOTc4MTQ1ODd9.fkwYcXjAYd_rSzQMt-B83hfv2vYhYnWTosGFpcwA9-Q" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-primary w-full flex justify-center items-center"
