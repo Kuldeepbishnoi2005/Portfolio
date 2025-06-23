@@ -44,7 +44,7 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img 
-                src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1750670391/file_00000000dce8622f95eb5dbf4a7e6a48_nx9mkc.png" 
                 alt="Jane Doe - Frontend Developer"
                 className="rounded-xl shadow-lg w-full h-auto object-cover"
               />
