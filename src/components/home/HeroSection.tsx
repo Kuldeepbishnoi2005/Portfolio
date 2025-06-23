@@ -101,7 +101,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
           >
             <img 
-              src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              src="https://github.com/Kuldeepbishnoi2005/AudioX/blob/main/img/file_00000000dce8622f95eb5dbf4a7e6a48.png" 
               alt="Kuldeep Bishnoi - Frontend Developer"
               className="rounded-xl shadow-lg w-full h-full object-cover"
             />
