@@ -74,7 +74,7 @@ const About = () => {
                 
                 <div className="mt-6">
                   <a 
-                    href="https://qaekqlqtkygzzfkcompg.supabase.co/storage/v1/object/sign/portfolio.img/FRONTEND%20DEVELOPER.pdf?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85ZTM4Y2Q1YS0yNjE4LTQzNDUtYWM0Zi05MDM2ODRlNjBmMDgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8uaW1nL0ZST05URU5EIERFVkVMT1BFUi5wZGYiLCJpYXQiOjE3NDkwMTQ1ODcsImV4cCI6NjYzOTc4MTQ1ODd9.fkwYcXjAYd_rSzQMt-B83hfv2vYhYnWTosGFpcwA9-Q" 
+                    href="https://drive.google.com/file/d/10KiP61gjljGgsaWw2sPEWXXlS4q5Q3ef/view?usp=drive_link" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-primary w-full flex justify-center items-center"
