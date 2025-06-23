@@ -170,7 +170,7 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
                 Contact
               </NavLink>
               <a
-                href="https://www.flickr.com/photos/203044059@N04/54608073119/in/dateposted-public/"
+                href="https://drive.google.com/file/d/10KiP61gjljGgsaWw2sPEWXXlS4q5Q3ef/view?usp=drive_link"
                 className="btn btn-primary text-center"
                 target="_blank"
                 rel="noopener noreferrer"
