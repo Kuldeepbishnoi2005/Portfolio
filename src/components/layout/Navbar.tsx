@@ -170,7 +170,7 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
                 Contact
               </NavLink>
               <a
-                href="https://qaekqlqtkygzzfkcompg.supabase.co/storage/v1/object/sign/portfolio.img/FRONTEND%20DEVELOPER.pdf?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85ZTM4Y2Q1YS0yNjE4LTQzNDUtYWM0Zi05MDM2ODRlNjBmMDgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8uaW1nL0ZST05URU5EIERFVkVMT1BFUi5wZGYiLCJpYXQiOjE3NDkwMTQ1ODcsImV4cCI6NjYzOTc4MTQ1ODd9.fkwYcXjAYd_rSzQMt-B83hfv2vYhYnWTosGFpcwA9-Q"
+                href="https://www.flickr.com/photos/203044059@N04/54608073119/in/dateposted-public/"
                 className="btn btn-primary text-center"
                 target="_blank"
                 rel="noopener noreferrer"
