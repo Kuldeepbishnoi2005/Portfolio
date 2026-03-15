@@ -2,7 +2,6 @@ import { useState, FormEvent } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Send, Mail, MapPin, Phone } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,11 +35,6 @@ const Contact = () => {
     setSubmitError('');
     
     try {
-      const { error } = await supabase
-        .from('contact_messages')
-        .insert([formData]);
-
-      if (error) throw error;
 
       // Send WhatsApp notification
       await sendWhatsAppNotification(formData);
