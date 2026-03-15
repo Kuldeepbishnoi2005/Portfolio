@@ -311,6 +311,5 @@ try {
       </section>
     </>
   );
-};
 
 export default Contact;
