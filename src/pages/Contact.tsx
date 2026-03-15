@@ -40,8 +40,6 @@ const Contact = () => {
   return !!win;
 };
 
-...
-
 // 3) handleSubmit TRY block REPLACE with this
 try {
   const opened = sendWhatsAppNotification(formData);
