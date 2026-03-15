@@ -50,6 +50,18 @@ export interface Education {
 
 export const projects: Project[] = [
   {
+    id: 'appointment booking',
+    title: 'An Integrated Healthcare Appointment Booking System',
+    description: 'A role‑based doctor appointment management system for clinics, where patients can book appointments online, doctors manage their schedules and notes, and admins control the entire workflow. ',
+    longDescription: 'MediBook is a full-stack web application designed to digitalize and simplify clinic appointment management. It allows patients to securely register, search doctors by specialty, and book or manage appointments. Doctors can view schedules, manage patient records, and add prescriptions, while administrators oversee doctors, patients, appointments, and system analytics through a centralized dashboard.',
+     image: 'https://res.cloudinary.com/dx1hmda5v/image/upload/v1773563557/MediBook_zj0pcb.png',
+    technologies: ['HTML5', 'CSS3', 'JavaScript','EJS','Node.js','Express.js','MySQL 8.x'],
+    liveUrl: 'https://medibook-clinic-production.up.railway.app/',
+    githubUrl: 'https://github.com/Kuldeepbishnoi2005/Medibook-Clinic',
+    category: 'web',
+    featured: true
+  },
+  {
     id: 'loginpage',
     title: 'LoginPage',
     description: 'This is a simple login page with Sign In and Register options, allowing users to create accounts and log in securely as part of a basic authentication system. ',
