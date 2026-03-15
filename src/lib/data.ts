@@ -83,7 +83,7 @@ export const projects: Project[] = [
     liveUrl: 'https://kuldeepbishnoi2005.github.io/LoginPage/',
     githubUrl: 'https://github.com/Kuldeepbishnoi2005/LoginPage',
     category: 'web',
-    featured: true
+    featured: false
   },
   {
     id: 'audioX',
