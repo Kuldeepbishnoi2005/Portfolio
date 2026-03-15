@@ -74,7 +74,7 @@ const About = () => {
                 
                 <div className="mt-6">
                   <a 
-                    href="https://drive.google.com/file/d/10KiP61gjljGgsaWw2sPEWXXlS4q5Q3ef/view?usp=drive_link" 
+                    href="https://drive.google.com/file/d/1BnVU9kl-v-DbJVdwwlAkK0ITx6XGM4M6/view?usp=drive_link" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-primary w-full flex justify-center items-center"
