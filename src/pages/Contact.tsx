@@ -23,41 +23,51 @@ const Contact = () => {
     }));
   };
 
-  const sendWhatsAppNotification = async (messageData: typeof formData) => {
-    const message = `New Contact Form Submission:\nName: ${messageData.name}\nEmail: ${messageData.email}\nSubject: ${messageData.subject}\nMessage: ${messageData.message}`;
-    const whatsappUrl = `https://wa.me/9350821597?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
+  const sendWhatsAppNotification = (messageData: typeof formData) => {
+  const message =
+    `New Contact Form Submission:\n` +
+    `Name: ${messageData.name}\n` +
+    `Email: ${messageData.email}\n` +
+    `Subject: ${messageData.subject}\n` +
+    `Message: ${messageData.message}`;
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitError('');
-    
-    try {
+  const whatsappUrl = `https://wa.me/9350821597?text=${encodeURIComponent(message)}`;
 
-      // Send WhatsApp notification
-      await sendWhatsAppNotification(formData);
+  // Try to open a new tab/window
+  const win = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
-      setSubmitSuccess(true);
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 5000);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitError('Failed to send message. Please try again later.');
-    } finally {
-      setIsSubmitting(false);
-    }
+  // If popup blocked, win will be null
+  return !!win;
+};
+
+...
+
+// 3) handleSubmit TRY block REPLACE with this
+try {
+  const opened = sendWhatsAppNotification(formData);
+
+  if (!opened) {
+    throw new Error('Popup blocked');
+  }
+
+  setSubmitSuccess(true);
+
+  setFormData({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  setTimeout(() => {
+    setSubmitSuccess(false);
+  }, 5000);
+} catch (error) {
+  console.error('Error submitting form:', error);
+  setSubmitError('WhatsApp popup blocked. Please allow popups and try again.');
+} finally {
+  setIsSubmitting(false);
+}
   };
 
   return (
