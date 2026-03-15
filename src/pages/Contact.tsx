@@ -10,13 +10,14 @@ const Contact = () => {
     subject: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
+
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -24,48 +25,52 @@ const Contact = () => {
   };
 
   const sendWhatsAppNotification = (messageData: typeof formData) => {
-  const message =
-    `New Contact Form Submission:\n` +
-    `Name: ${messageData.name}\n` +
-    `Email: ${messageData.email}\n` +
-    `Subject: ${messageData.subject}\n` +
-    `Message: ${messageData.message}`;
+    const message =
+      `New Contact Form Submission:\n` +
+      `Name: ${messageData.name}\n` +
+      `Email: ${messageData.email}\n` +
+      `Subject: ${messageData.subject}\n` +
+      `Message: ${messageData.message}`;
 
-  const whatsappUrl = `https://wa.me/9350821597?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/9350821597?text=${encodeURIComponent(message)}`;
 
-  // Try to open a new tab/window
-  const win = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    const win = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
-  // If popup blocked, win will be null
-  return !!win;
-};
+    return !!win;
+  };
 
-// 3) handleSubmit TRY block REPLACE with this
-try {
-  const opened = sendWhatsAppNotification(formData);
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
 
-  if (!opened) {
-    throw new Error('Popup blocked');
-  }
+    setIsSubmitting(true);
+    setSubmitError('');
 
-  setSubmitSuccess(true);
+    try {
+      const opened = sendWhatsAppNotification(formData);
 
-  setFormData({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+      if (!opened) {
+        throw new Error('Popup blocked');
+      }
 
-  setTimeout(() => {
-    setSubmitSuccess(false);
-  }, 5000);
-} catch (error) {
-  console.error('Error submitting form:', error);
-  setSubmitError('WhatsApp popup blocked. Please allow popups and try again.');
-} finally {
-  setIsSubmitting(false);
-}
+      setSubmitSuccess(true);
+
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+
+      setTimeout(() => {
+        setSubmitSuccess(false);
+      }, 5000);
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitError('WhatsApp popup blocked. Please allow popups and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -77,7 +82,7 @@ try {
 
       <section className="pt-32 pb-20">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="text-center max-w-3xl mx-auto mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -86,6 +91,7 @@ try {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Let's Connect
             </h1>
+
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Have a project in mind or want to chat? I'd love to hear from you!
             </p>
@@ -311,5 +317,5 @@ try {
       </section>
     </>
   );
-
+);
 export default Contact;
