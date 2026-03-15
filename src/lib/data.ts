@@ -95,7 +95,7 @@ export const projects: Project[] = [
     liveUrl: 'https://kuldeepbishnoi.netlify.app/',
     githubUrl: 'https://github.com/Kuldeepbishnoi2005/portfolio',
     category: 'web',
-    featured: true
+    featured: false
   }
 ];
 
