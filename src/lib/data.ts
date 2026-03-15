@@ -62,6 +62,18 @@ export const projects: Project[] = [
     featured: true
   },
   {
+    id: 'snooker club',
+    title: 'Snooker Club',
+    description: 'SnookerClub BLACK8 is a web-based platform that helps manage snooker club activities online. Users can check available tables, book playing sessions, and view match details. It also helps administrators manage bookings, track table usage, and maintain player records through a simple and easy-to-use system. ',
+    longDescription: 'SnookerClub BLACK8 is a full-stack web application built to simplify snooker club management. Players can register, log in, and book snooker tables based on available time slots. They can also view match schedules, check game history, and manage their profiles. The system also includes an admin panel where administrators can manage tables, bookings, players, and match results. It helps track table availability and organize reservations easily. The application has a simple, user-friendly interface and works smoothly on both desktop and mobile devices.',
+    image: 'https://res.cloudinary.com/dx1hmda5v/image/upload/v1773570894/Screenshot_2026-03-15_160321_s5lvso.png',
+    technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Vite','Supabase','Node.js','npm'],
+    liveUrl: 'https://black8.netlify.app/',
+    githubUrl: 'https://github.com/Kuldeepbishnoi2005/snookerclub_BLACK8',
+    category: 'web',
+    featured: true
+  },
+  {
     id: 'loginpage',
     title: 'LoginPage',
     description: 'This is a simple login page with Sign In and Register options, allowing users to create accounts and log in securely as part of a basic authentication system. ',
@@ -91,7 +103,7 @@ export const projects: Project[] = [
     description: 'A personal portfolio built with React, TypeScript, Tailwind CSS, and Supabase. Features responsive design, animations, dark/light mode, and follows modern development best practices.',
     longDescription: 'This is my personal portfolio website designed to highlight my skills, projects, and professional background. It features a clean and modern design with smooth animations, a fully responsive layout that works seamlessly across devices, and an intuitive user interface. The website includes sections like About, Projects, Skills, and Contact, offering a complete overview of who I am and what I do. It’s built to create a lasting impression, provide an engaging experience for visitors, and serve as a central place to connect with me professionally.',
     image: 'https://images.pexels.com/photos/4974914/pexels-photo-4974914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Vite','Supabase','Node.js','npm',],
+    technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Vite','Supabase','Node.js','npm'],
     liveUrl: 'https://kuldeepbishnoi.netlify.app/',
     githubUrl: 'https://github.com/Kuldeepbishnoi2005/portfolio',
     category: 'web',
