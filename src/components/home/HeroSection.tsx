@@ -101,7 +101,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
           >
             <img 
-              src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1750670391/file_00000000dce8622f95eb5dbf4a7e6a48_nx9mkc.png" 
+              src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1775936400/photo_vorasg.png" 
               alt="Kuldeep Bishnoi - Frontend Developer"
               className="rounded-xl shadow-lg w-full h-[400px] object-cover"
             />
